@@ -170,6 +170,9 @@ if [[ $IsTermux == 0 ]]; then
      echo -e "${RED}[!] Select Valid Option [!]"
  fi
 else
+ echo "${BLUE} Termux discovered!"
+ sleep 2
+ clear
  echo -e "${COLOR}"
  echo ""
  echo "   ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄██████▄           ███      ▄██████▄   ▄██████▄   ▄█       ";
