@@ -19,7 +19,6 @@ fi
 if [[ $EUID -ne 0 && $IsTermux == 0 ]]; then
    echo -e "${RED}This script must be run as root"
    exit 1
-   rm check.txt
 fi
 
 COLOR_NUM=$((RANDOM % 7))
