@@ -12,11 +12,9 @@ CYAN='\e[1;36m'
 WHITE='\e[1;37m'
 ORANGE='\e[1;93m'
 NC='\e[0m'
-touch check.txt
-uname -a > check.txt
-if [[ $(grep -R "Android" ./check.txt) != "" ]]; then
+
+if [[ $(uname -m) == "aarch64" ]]; then
  IsTermux=1
- rm check.txt
 fi
 if [[ $EUID -ne 0 && $IsTermux == 0 ]]; then
    echo -e "${RED}This script must be run as root"
